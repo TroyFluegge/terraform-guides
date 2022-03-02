@@ -16,7 +16,7 @@ module "aws-functions" {
 
 policy "enforce-mandatory-tags" {
   source = "./enforce-mandatory-tags.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "protect-against-rds-instance-deletion" {
@@ -81,7 +81,7 @@ policy "restrict-ec2-instance-type" {
 
 policy "restrict-egress-sg-rule-cidr-blocks" {
   source = "./restrict-egress-sg-rule-cidr-blocks.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-eks-node-group-size" {
