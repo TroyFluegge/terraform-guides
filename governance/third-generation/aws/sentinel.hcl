@@ -81,7 +81,7 @@ policy "restrict-ec2-instance-type" {
 
 policy "restrict-egress-sg-rule-cidr-blocks" {
   source = "./restrict-egress-sg-rule-cidr-blocks.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
 
 policy "restrict-eks-node-group-size" {
